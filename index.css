@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    --header-color: #526BEE;
+    --card-color: #5B8461
+}
+
+.header {
+    background-color: var(--header-color);
+    height: 20vh;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.card-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    place-content: center;
+    align-items: center;
+}
+
+.card-view > li{
+    list-style: none;
+    background-color: var(--card-color);
+    height: 15rem;
+    font-size: 4rem;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
